@@ -4,8 +4,8 @@
 const loginForm = document.querySelector("form[name=login");
 const err = document.querySelectorAll(".err");
 const logout = document.querySelector(".btn-logout");
+let usernameField = document.querySelector(".user");
 if (loginForm) {
-    document.onload = checkUser();
     loginForm.addEventListener("submit", (e) => {
         e.preventDefault();
         let valid = true;
@@ -25,21 +25,24 @@ if (loginForm) {
         }
         if (valid) {
             localStorage.setItem("uname", uname);
-            location.href = "home.html";
+            location.href = "index.html";
         }
     });
 
 }
 if (logout) {
+    document.onload = checkUser();
     logout.addEventListener("click", () => {
         localStorage.removeItem("uname");
-        location.href = "index.html";
+        location.href = "login.html";
     });
 }
 
 function checkUser() {
-    if (localStorage.getItem("uname")) {
-        uname = localStorage.getItem("uname");
-        location.href = "home.html";
+    if (!localStorage.getItem("uname")) {
+        location.href = "login.html";
+    } else {
+        usernameField.innerHTML = localStorage.getItem("uname");
+        usernameField.style.display = "inline-block";
     }
 }

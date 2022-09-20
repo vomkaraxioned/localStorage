@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Local Storage(home)</title>
+    <title>Local Storage</title>
     <!-- View-port Basics: http://mzl.la/VYREaP -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <!-- Place favicon.ico in the root directory: mathiasbynens.be/notes/touch-icons -->
@@ -18,15 +18,29 @@
 
 <body>
     <!--container start-->
-    <header>
-        <div class="wrapper">
-            <a href="#FIXME" title="Logout" class="btn btn-logout">Logout</a>
-        </div>
-    </header>
     <div class="container">
         <!--main section start-->
         <main>
-            <h1>Welcome Back</h1>
+            <div class="wrapper">
+                <div class="login-form">
+                    <form action="#FIXME" name="login" method="GET">
+                        <ul class="input-fields">
+                            <li class="input-field">
+                                <input type="text" placeholder="Enter user name" name="uname" />
+                                <span class="err">a</span>
+                            </li>
+                            <li class="input-field">
+                                <input type="password" placeholder="Enter password" name="pass" />
+                                <span class="err">a</span>
+                            </li>
+                            <li class="input-field">
+                                <input type="submit" name="submit" value="Login" class="btn login-btn" />
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+            </div>
+
         </main>
         <!--main section end-->
 
