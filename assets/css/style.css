@@ -256,68 +256,6 @@ h1 {
   main styling starts here
 =================================*/
 
-.login-form {
-    width: 30%;
-    padding: 200px 0;
-    margin: 0 auto;
-}
-
-form {
-    width: 100%;
-    padding: 40px 5%;
-    border: 1px solid #cecece;
-}
-
-.input-fields {
-    display: flex;
-    flex-direction: column;
-}
-
-.input-field {
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: column;
-}
-
-.input-field:last-child {
-    justify-content: center;
-}
-
-input[type=text],
-input[type=password] {
-    width: 94%;
-    padding: 10px 3%;
-    border: 1px solid #cdcdcd;
-    border-radius: 5px;
-    outline: none;
-}
-
-.login-btn {
-    padding: 10px 10%;
-    background-color: #3fff00;
-    border: 1px solid #3fff00;
-    border-radius: 5px;
-    outline: none;
-    color: #fff;
-    font-weight: 900;
-}
-
-.login-btn:hover {
-    background-color: #fff;
-    color: #3fff00;
-}
-
-.err {
-    display: none;
-    color: #f00;
-    font-size: 12px;
-    text-transform: capitalize;
-}
-
-.user {
-    display: none;
-}
-
 
 /*=================================
   main styling ends here
