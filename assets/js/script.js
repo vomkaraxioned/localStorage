@@ -20,7 +20,7 @@ if (loginForm) {
         }
         if (pass == "") {
             valid = false;
-            err[1].innerHTML = "Enter username";
+            err[1].innerHTML = "Enter password";
             err[1].style.display = "block";
         }
         if (valid) {
