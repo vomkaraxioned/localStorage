@@ -5,6 +5,7 @@ const loginForm = document.querySelector("form[name=login");
 const err = document.querySelectorAll(".err");
 const logout = document.querySelector(".btn-logout");
 let usernameField = document.querySelector(".user");
+document.onload = checkUser();
 if (loginForm) {
     loginForm.addEventListener("submit", (e) => {
         e.preventDefault();
@@ -31,7 +32,6 @@ if (loginForm) {
 
 }
 if (logout) {
-    document.onload = checkUser();
     logout.addEventListener("click", () => {
         localStorage.removeItem("uname");
         location.href = "login.html";
@@ -44,5 +44,6 @@ function checkUser() {
     } else {
         usernameField.innerHTML = localStorage.getItem("uname");
         usernameField.style.display = "inline-block";
+        location.href = "index.html";
     }
 }
