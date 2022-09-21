@@ -51,6 +51,5 @@ function checkUser() {
         }
         usernameField.innerHTML = localStorage.getItem("uname");
         usernameField.style.display = "inline-block";
-        location.href = "index.html";
     }
 }
