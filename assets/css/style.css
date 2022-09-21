@@ -223,29 +223,6 @@ li {
   Header styling starts here
 =================================*/
 
-header .wrapper {
-    padding: 10px 0;
-    display: flex;
-    justify-content: right;
-}
-
-h1 {
-    text-align: center;
-}
-
-.btn-logout {
-    padding: 7px 2%;
-    border: 1px solid #f00;
-    background-color: #f00;
-    color: #fff;
-    text-align: center;
-}
-
-.btn-logout:hover {
-    background-color: #fff;
-    color: #f00;
-}
-
 
 /*=================================
   Header styling ends here
